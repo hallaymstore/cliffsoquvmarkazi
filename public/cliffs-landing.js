@@ -23,13 +23,13 @@
       extended: "Darslar davomida mavzu tushuntirish, amaliy mashq, uyga vazifa, test va mentor izohi bir-biriga bog'langan holda olib boriladi.",
       stats: [
         { value: "14+", label: "asosiy yo'nalish" },
-        { value: "6", label: "o'qish formati" },
+        { value: "2", label: "o'qish formati" },
         { value: "08:30-20:00", label: "kundalik ish vaqti" },
         { value: "1", label: "yagona markaz tizimi" }
       ]
     },
     heroBullets: [
-      "Offline, online, hybrid, individual va weekend guruhlar",
+      "Offline va online guruhlar",
       "Boshlang'ichdan chuqurroq tayyorlovgacha bo'lgan oqimlar",
       "Mentor kuzatuvi, test va topshiriq nazorati muntazam olib boriladi",
       "Telefon orqali qabul, yo'naltirish va guruh tanlash tezda amalga oshiriladi"
@@ -56,7 +56,7 @@
       {
         tag: "Vaqt",
         title: "Turli kun tartibiga mos guruhlar",
-        text: "Maktab, universitet yoki ish bilan birga o'qish qulay bo'lishi uchun ertalabgi, kunduzgi, kechki va weekend guruhlar mavjud.",
+        text: "Maktab, universitet yoki ish bilan birga o'qish qulay bo'lishi uchun ertalabgi, kunduzgi, kechki offline guruhlar va online live variantlar mavjud.",
         note: "Har kim o'z jadvaliga mos variant topadi."
       },
       {
@@ -79,7 +79,7 @@
       },
       {
         title: "2. Daraja va guruh tanlash",
-        text: "Boshlang'ich, davom ettiruvchi yoki intensiv guruh tanlanadi. Jadvalga mos vaqt birgalikda belgilanadi."
+        text: "Boshlang'ich yoki davom ettiruvchi guruh tanlanadi. Jadvalga mos offline yoki online vaqt birgalikda belgilanadi."
       },
       {
         title: "3. Dars va amaliyot",
@@ -199,7 +199,7 @@
       },
       {
         q: "Darslar qanday formatda bo'ladi?",
-        a: "Offline, online, hybrid, intensiv, individual va weekend formatlar mavjud. Vaqt bo'yicha mos guruh tanlanadi."
+        a: "Darslar offline va online formatda bo'ladi. Vaqt bo'yicha mos guruh tanlanadi."
       },
       {
         q: "Qabulga oldindan yozilish kerakmi?",
@@ -215,14 +215,10 @@
       }
     ],
     catalog: {
-      studyTypes: brand.studyTypes || ["Offline", "Online", "Hybrid", "Intensiv", "Individual", "Weekend"],
+      studyTypes: brand.studyTypes || ["Offline", "Online"],
       groups: brand.groups || {
         Offline: ["Morning 08:30", "Day 10:30", "Afternoon 14:00", "Evening 18:30"],
-        Online: ["Online Live 09:00", "Online Live 15:00", "Online Evening 20:00"],
-        Hybrid: ["Hybrid Flex A", "Hybrid Flex B"],
-        Intensiv: ["Intensiv 5 kun", "Intensiv 8 hafta"],
-        Individual: ["Personal Mentor"],
-        Weekend: ["Saturday Group", "Sunday Group"]
+        Online: ["Online Live 09:00", "Online Live 15:00", "Online Evening 20:00"]
       },
       directions: (brand.directions || []).map(function (item) {
         return {
@@ -391,11 +387,7 @@
   function describeStudyType(name) {
     const map = {
       Offline: "Sinfxona darslari, mentor bilan yuzma-yuz ishlash va muntazam nazorat.",
-      Online: "Masofadan turib jonli dars va topshiriqlar bilan qatnashish imkoni.",
-      Hybrid: "Offline va online usullarni birga olib borishga moslashgan format.",
-      Intensiv: "Qisqa muddatda tezroq natija olish uchun zichlashtirilgan rejim.",
-      Individual: "Shaxsiy temp va alohida e'tibor kerak bo'lgan o'quvchilar uchun.",
-      Weekend: "Hafta ichi band bo'lganlar uchun shanba-yakshanba guruhlari."
+      Online: "Masofadan turib jonli dars va topshiriqlar bilan qatnashish imkoni."
     };
     return map[name] || "Markaz jadvaliga moslashgan o'qish formati.";
   }

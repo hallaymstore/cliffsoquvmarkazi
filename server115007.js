@@ -1046,14 +1046,10 @@ const CLIFFS_PROGRAMS = {
   ]
 };
 
-const CLIFFS_STUDY_TYPES = ["Offline", "Online", "Hybrid", "Intensiv", "Individual", "Weekend"];
+const CLIFFS_STUDY_TYPES = ["Offline", "Online"];
 const CLIFFS_STUDY_GROUPS = {
   Offline: ["Morning 08:30", "Day 10:30", "Afternoon 14:00", "Evening 18:30"],
-  Online: ["Online Live 09:00", "Online Live 15:00", "Online Evening 20:00"],
-  Hybrid: ["Hybrid Flex A", "Hybrid Flex B"],
-  Intensiv: ["Intensiv 5 kun", "Intensiv 8 hafta"],
-  Individual: ["Personal Mentor"],
-  Weekend: ["Saturday Group", "Sunday Group"]
+  Online: ["Online Live 09:00", "Online Live 15:00", "Online Evening 20:00"]
 };
 
 const CLIFFS_FALLBACK_JSON = path.join(__dirname, 'public', 'data', 'cliffs-center.json');
@@ -1111,7 +1107,9 @@ function getFallbackCatalogSnapshot() {
       }));
 
   const studyTypes = Array.isArray(catalog.studyTypes)
-    ? catalog.studyTypes.map((x) => cleanText(x, 80)).filter(Boolean)
+    ? catalog.studyTypes
+        .map((x) => cleanText(x, 80))
+        .filter((name) => CLIFFS_STUDY_TYPES.includes(name))
     : CLIFFS_STUDY_TYPES.slice();
 
   const groups = {};
@@ -1119,7 +1117,7 @@ function getFallbackCatalogSnapshot() {
   for (const [key, value] of Object.entries(rawGroups || {})) {
     const nextKey = cleanText(key, 80);
     const nextList = Array.isArray(value) ? value.map((x) => cleanText(x, 80)).filter(Boolean) : [];
-    if (nextKey) groups[nextKey] = nextList;
+    if (nextKey && CLIFFS_STUDY_TYPES.includes(nextKey)) groups[nextKey] = nextList;
   }
 
   const centerName = cleanText(data?.center?.name, 180) || CLIFFS_CENTER_NAME;
@@ -1282,7 +1280,7 @@ async function ensureDefaultPrograms() {
 }
 
 async function ensureDefaultStudyTypes() {
-  const defaults = ['Kunduzgi', 'Kechki', 'Masofaviy', ...CLIFFS_STUDY_TYPES];
+  const defaults = CLIFFS_STUDY_TYPES.slice();
 
   const universities = await UniversityCatalog.find({}).select('name faculties').lean().catch(() => []);
   for (const uni of (universities || [])) {
@@ -1300,6 +1298,11 @@ async function ensureDefaultStudyTypes() {
       }
     }
   }
+
+  await StudyTypeCatalog.deleteMany({
+    university: CLIFFS_CENTER_NAME,
+    name: { $nin: CLIFFS_STUDY_TYPES }
+  }).catch(() => {});
 }
 
 async function ensureDefaultStudyGroups() {
@@ -6734,10 +6737,15 @@ socket.on('chat:live', ({ liveId, text }) => {
               }
             } else {
               activeZakovatSessions.set(sid, session);
-            }
-          }
-        }
       }
+    }
+  }
+
+  await StudyGroupCatalog.deleteMany({
+    university: CLIFFS_CENTER_NAME,
+    studyType: { $nin: CLIFFS_STUDY_TYPES }
+  }).catch(() => {});
+}
     } catch (e) {
       console.error('disconnect zakovat cleanup error:', e);
     }
@@ -10455,9 +10463,12 @@ app.get('/api/catalog/study-types', async (req, res) => {
     const filter = { university, faculty };
     if (q) filter.name = { $regex: escapeRegex(q), $options: 'i' };
     const list = await StudyTypeCatalog.find(filter).sort({ name: 1 }).limit(500).lean();
+    const filtered = String(university) === String(CLIFFS_CENTER_NAME)
+      ? list.filter((x) => CLIFFS_STUDY_TYPES.includes(cleanText(x?.name, 80)))
+      : list;
     res.json({
       success: true,
-      studyTypes: list.map((x) => ({ _id: x._id, name: x.name, faculty: x.faculty }))
+      studyTypes: filtered.map((x) => ({ _id: x._id, name: x.name, faculty: x.faculty }))
     });
   } catch (e) {
     res.status(500).json({ error: 'Failed to load study types' });
@@ -10484,6 +10495,9 @@ app.get('/api/catalog/study-groups', async (req, res) => {
     }
 
     const filter = { university, faculty, studyType };
+    if (String(university) === String(CLIFFS_CENTER_NAME) && !CLIFFS_STUDY_TYPES.includes(studyType)) {
+      return res.json({ success: true, studyGroups: [] });
+    }
     if (q) {
       filter.name = { $regex: escapeRegex(q), $options: 'i' };
     }

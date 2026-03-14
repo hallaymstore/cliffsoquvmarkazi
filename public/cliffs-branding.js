@@ -71,14 +71,10 @@
         programs: ["Scratch Kids", "Robotics Kids", "Digital Literacy", "Creative Tech"]
       }
     ],
-    studyTypes: ["Offline", "Online", "Hybrid", "Intensiv", "Individual", "Weekend"],
+    studyTypes: ["Offline", "Online"],
     groups: {
       Offline: ["Morning 08:30", "Day 10:30", "Afternoon 14:00", "Evening 18:30"],
-      Online: ["Online Live 09:00", "Online Live 15:00", "Online Evening 20:00"],
-      Hybrid: ["Hybrid Flex A", "Hybrid Flex B"],
-      Intensiv: ["Intensiv 5 kun", "Intensiv 8 hafta"],
-      Individual: ["Personal Mentor"],
-      Weekend: ["Saturday Group", "Sunday Group"]
+      Online: ["Online Live 09:00", "Online Live 15:00", "Online Evening 20:00"]
     }
   };
   window.__CLIFFS_BRAND = BRAND;
