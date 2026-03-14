@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  --cliffs-orange: #ff7a00;
+  --cliffs-orange-deep: #ff5a00;
+  --cliffs-orange-soft: #ffb168;
+  --cliffs-black: #090909;
+  --cliffs-coal: #1b1b1b;
+  --cliffs-cream: #f7efe6;
+  --cliffs-cream-2: #fff8f1;
+  --cliffs-sand: #f0e4d7;
+  --cliffs-line: rgba(255, 122, 0, 0.18);
+  --cliffs-line-strong: rgba(255, 122, 0, 0.34);
+  --cliffs-muted: #625448;
+  --cliffs-muted-soft: rgba(98, 84, 72, 0.78);
+  --cliffs-panel: rgba(255, 249, 242, 0.86);
+  --cliffs-panel-2: rgba(255, 244, 232, 0.74);
+  --cliffs-shadow: 0 20px 60px rgba(20, 10, 0, 0.12);
+  --cliffs-shadow-strong: 0 24px 80px rgba(18, 10, 0, 0.18);
+  --cliffs-ring: 0 0 0 4px rgba(255, 122, 0, 0.16);
+}
+
+html.dark {
+  --cliffs-cream: #120f0d;
+  --cliffs-cream-2: #191513;
+  --cliffs-sand: #2b211b;
+  --cliffs-line: rgba(255, 122, 0, 0.22);
+  --cliffs-line-strong: rgba(255, 122, 0, 0.4);
+  --cliffs-muted: #d9c6b4;
+  --cliffs-muted-soft: rgba(217, 198, 180, 0.74);
+  --cliffs-panel: rgba(16, 16, 16, 0.88);
+  --cliffs-panel-2: rgba(28, 24, 22, 0.82);
+  --cliffs-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+  --cliffs-shadow-strong: 0 28px 90px rgba(0, 0, 0, 0.5);
+}
+
+html.cliffs-theme,
+body.cliffs-branding {
+  min-height: 100%;
+}
+
+body.cliffs-branding,
+body.cliffs-branding.uni-theme-body {
+  position: relative;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 122, 0, 0.18), transparent 32%),
+    radial-gradient(circle at 88% 10%, rgba(0, 0, 0, 0.08), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(255, 122, 0, 0.09), transparent 42%),
+    linear-gradient(180deg, var(--cliffs-cream-2), var(--cliffs-cream)) !important;
+  color: var(--cliffs-black) !important;
+  font-family: "Manrope", "Segoe UI", sans-serif !important;
+}
+
+html.dark body.cliffs-branding,
+html.dark body.cliffs-branding.uni-theme-body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 122, 0, 0.18), transparent 32%),
+    radial-gradient(circle at 88% 10%, rgba(255, 122, 0, 0.12), transparent 26%),
+    radial-gradient(circle at 50% 100%, rgba(255, 122, 0, 0.08), transparent 42%),
+    linear-gradient(180deg, #0f0d0c, #15110f 52%, #1d1713) !important;
+  color: #fff4ea !important;
+}
+
+body.cliffs-branding::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, rgba(255, 122, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 122, 0, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at 50% 36%, #000 0%, transparent 74%);
+}
+
+body.cliffs-branding .bg,
+body.cliffs-branding .bg-orbs,
+html.dark body.cliffs-branding .bg-orbs {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(255, 122, 0, 0.24), transparent 36%),
+    radial-gradient(circle at 86% 8%, rgba(0, 0, 0, 0.1), transparent 28%),
+    radial-gradient(circle at 50% 100%, rgba(255, 122, 0, 0.14), transparent 40%),
+    linear-gradient(180deg, transparent, transparent) !important;
+}
+
+body.cliffs-branding .gridbg,
+body.cliffs-branding .bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 122, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 122, 0, 0.06) 1px, transparent 1px) !important;
+  opacity: 0.78 !important;
+}
+
+body.cliffs-branding h1,
+body.cliffs-branding h2,
+body.cliffs-branding h3,
+body.cliffs-branding h4,
+body.cliffs-branding .font-extrabold,
+body.cliffs-branding .font-black {
+  color: var(--cliffs-black) !important;
+  font-family: "Space Grotesk", "Manrope", sans-serif !important;
+  letter-spacing: -0.03em;
+}
+
+html.dark body.cliffs-branding h1,
+html.dark body.cliffs-branding h2,
+html.dark body.cliffs-branding h3,
+html.dark body.cliffs-branding h4,
+html.dark body.cliffs-branding .font-extrabold,
+html.dark body.cliffs-branding .font-black {
+  color: #fff4ea !important;
+}
+
+body.cliffs-branding .muted,
+body.cliffs-branding .muted2,
+body.cliffs-branding .tiny,
+body.cliffs-branding .sub,
+body.cliffs-branding .text-gray-500,
+body.cliffs-branding .text-gray-600,
+body.cliffs-branding .text-gray-700,
+body.cliffs-branding .text-slate-500,
+body.cliffs-branding .text-slate-600,
+body.cliffs-branding .text-slate-700,
+body.cliffs-branding .text-zinc-500,
+body.cliffs-branding .text-zinc-600 {
+  color: var(--cliffs-muted-soft) !important;
+}
+
+body.cliffs-branding header,
+body.cliffs-branding .glass,
+body.cliffs-branding .card,
+body.cliffs-branding .modal,
+body.cliffs-branding .panel,
+body.cliffs-branding .widget,
+body.cliffs-branding [class*="bg-white"],
+body.cliffs-branding [class*="bg-gray-50"],
+body.cliffs-branding [class*="bg-slate-50"] {
+  background: linear-gradient(180deg, var(--cliffs-panel), var(--cliffs-panel-2)) !important;
+  border: 1px solid var(--cliffs-line) !important;
+  box-shadow: var(--cliffs-shadow) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+html.dark body.cliffs-branding header,
+html.dark body.cliffs-branding .glass,
+html.dark body.cliffs-branding .card,
+html.dark body.cliffs-branding .modal,
+html.dark body.cliffs-branding .panel,
+html.dark body.cliffs-branding .widget,
+html.dark body.cliffs-branding [class*="bg-white"],
+html.dark body.cliffs-branding [class*="bg-gray-50"],
+html.dark body.cliffs-branding [class*="bg-slate-50"] {
+  background: linear-gradient(180deg, rgba(16, 16, 16, 0.92), rgba(24, 20, 18, 0.84)) !important;
+  border: 1px solid rgba(255, 122, 0, 0.22) !important;
+}
+
+body.cliffs-branding .g-border::before {
+  background: linear-gradient(135deg, rgba(255, 122, 0, 0.5), rgba(255, 190, 122, 0.25), rgba(24, 24, 24, 0.14)) !important;
+}
+
+body.cliffs-branding button,
+body.cliffs-branding .btn,
+body.cliffs-branding a.btn,
+body.cliffs-branding .btn-primary,
+body.cliffs-branding button.btn-primary,
+body.cliffs-branding .btn.primary,
+body.cliffs-branding .primary-btn,
+body.cliffs-branding .gradient-bg,
+body.cliffs-branding .uni-quick-menu-btn {
+  border-radius: 16px !important;
+}
+
+body.cliffs-branding .btn-primary,
+body.cliffs-branding button.btn-primary,
+body.cliffs-branding .btn.primary,
+body.cliffs-branding .primary-btn,
+body.cliffs-branding .gradient-bg,
+body.cliffs-branding .uni-quick-menu-btn {
+  background: linear-gradient(135deg, #ff922d 0%, var(--cliffs-orange) 58%, var(--cliffs-orange-deep) 100%) !important;
+  color: #fff8f0 !important;
+  border: 1px solid rgba(255, 122, 0, 0.42) !important;
+  box-shadow: 0 18px 40px rgba(255, 122, 0, 0.18) !important;
+}
+
+body.cliffs-branding .btn.danger,
+body.cliffs-branding .danger {
+  background: linear-gradient(135deg, #111111, #2b2b2b) !important;
+  color: #fff4ea !important;
+  border-color: rgba(255, 122, 0, 0.2) !important;
+}
+
+body.cliffs-branding .btn.ghost,
+body.cliffs-branding .ghost {
+  background: rgba(255, 255, 255, 0.24) !important;
+  border-color: var(--cliffs-line) !important;
+}
+
+html.dark body.cliffs-branding .btn.ghost,
+html.dark body.cliffs-branding .ghost {
+  background: rgba(255, 255, 255, 0.04) !important;
+}
+
+body.cliffs-branding input,
+body.cliffs-branding select,
+body.cliffs-branding textarea,
+body.cliffs-branding .field,
+body.cliffs-branding .input {
+  background: rgba(255, 255, 255, 0.74) !important;
+  color: var(--cliffs-black) !important;
+  border: 1px solid rgba(255, 122, 0, 0.18) !important;
+  box-shadow: none !important;
+}
+
+html.dark body.cliffs-branding input,
+html.dark body.cliffs-branding select,
+html.dark body.cliffs-branding textarea,
+html.dark body.cliffs-branding .field,
+html.dark body.cliffs-branding .input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #fff4ea !important;
+}
+
+body.cliffs-branding input::placeholder,
+body.cliffs-branding textarea::placeholder {
+  color: rgba(98, 84, 72, 0.62) !important;
+}
+
+body.cliffs-branding input:focus,
+body.cliffs-branding select:focus,
+body.cliffs-branding textarea:focus,
+body.cliffs-branding .field:focus,
+body.cliffs-branding .input:focus,
+body.cliffs-branding .glow-ring:focus {
+  outline: none !important;
+  border-color: rgba(255, 122, 0, 0.4) !important;
+  box-shadow: var(--cliffs-ring) !important;
+}
+
+body.cliffs-branding .tag,
+body.cliffs-branding .pill,
+body.cliffs-branding .badge,
+body.cliffs-branding .chip {
+  background: rgba(255, 122, 0, 0.1) !important;
+  border-color: rgba(255, 122, 0, 0.18) !important;
+  color: var(--cliffs-black) !important;
+}
+
+html.dark body.cliffs-branding .tag,
+html.dark body.cliffs-branding .pill,
+html.dark body.cliffs-branding .badge,
+html.dark body.cliffs-branding .chip {
+  color: #fff4ea !important;
+}
+
+body.cliffs-branding .u-anim {
+  background: linear-gradient(90deg, #111111, var(--cliffs-orange), #ff9a3d) !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+body.cliffs-branding footer {
+  margin-top: 28px;
+  padding: 22px 16px 36px;
+  color: var(--cliffs-muted-soft) !important;
+  border-top: 1px solid var(--cliffs-line);
+}
+
+body.cliffs-branding code {
+  background: rgba(255, 122, 0, 0.08) !important;
+  border-color: rgba(255, 122, 0, 0.16) !important;
+}
+
+body.cliffs-branding * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 122, 0, 0.72) rgba(17, 17, 17, 0.08);
+}
+
+body.cliffs-branding *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body.cliffs-branding *::-webkit-scrollbar-track {
+  background: rgba(17, 17, 17, 0.08);
+  border-radius: 999px;
+}
+
+body.cliffs-branding *::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ffac5d, var(--cliffs-orange), var(--cliffs-orange-deep));
+  border-radius: 999px;
+}
+
+.cliffs-brand-anchor {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.cliffs-brand-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.68), transparent 40%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(255, 241, 230, 0.95));
+  border: 1px solid rgba(255, 122, 0, 0.16);
+  box-shadow: var(--cliffs-shadow);
+  flex-shrink: 0;
+}
+
+.cliffs-brand-logo svg {
+  width: 34px;
+  height: 34px;
+}
+
+.cliffs-brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cliffs-brand-kicker {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--cliffs-muted-soft) !important;
+}
+
+.cliffs-brand-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--cliffs-black) !important;
+}
+
+html.dark .cliffs-brand-title {
+  color: #fff4ea !important;
+}
+
+.cliffs-contact-strip {
+  max-width: 1200px;
+  margin: 12px auto 0;
+  padding: 0 16px;
+}
+
+.cliffs-contact-shell {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.95), rgba(37, 26, 17, 0.92));
+  color: #fff4ea;
+  border: 1px solid rgba(255, 122, 0, 0.2);
+  box-shadow: var(--cliffs-shadow-strong);
+}
+
+.cliffs-contact-copy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.cliffs-contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 122, 0, 0.12);
+  border: 1px solid rgba(255, 122, 0, 0.22);
+  color: #fff4ea !important;
+}
+
+.cliffs-contact-chip strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13px;
+}
+
+.cliffs-contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cliffs-contact-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff922d, var(--cliffs-orange));
+  color: #fff6ee !important;
+}
+
+.cliffs-summary-shell {
+  margin-bottom: 18px;
+}
+
+.cliffs-summary-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 22px;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(255, 122, 0, 0.16), transparent 34%),
+    linear-gradient(145deg, rgba(255, 249, 242, 0.95), rgba(255, 241, 226, 0.9));
+  border: 1px solid rgba(255, 122, 0, 0.16);
+  box-shadow: var(--cliffs-shadow);
+}
+
+html.dark .cliffs-summary-card {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(255, 122, 0, 0.12), transparent 34%),
+    linear-gradient(145deg, rgba(14, 14, 14, 0.94), rgba(30, 25, 22, 0.88));
+}
+
+.cliffs-summary-card::after {
+  content: "";
+  position: absolute;
+  right: -90px;
+  top: -110px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 122, 0, 0.18), transparent 66%);
+}
+
+.cliffs-summary-kicker {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cliffs-orange) !important;
+  font-weight: 800;
+}
+
+.cliffs-summary-title {
+  margin-top: 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.02;
+}
+
+.cliffs-summary-text {
+  max-width: 720px;
+  margin-top: 10px;
+  color: var(--cliffs-muted-soft) !important;
+}
+
+.cliffs-summary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.cliffs-stat {
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid rgba(255, 122, 0, 0.14);
+}
+
+html.dark .cliffs-stat {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.cliffs-stat strong {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+}
+
+.cliffs-stat span {
+  display: block;
+  margin-top: 4px;
+  color: var(--cliffs-muted-soft) !important;
+  font-size: 12px;
+}
+
+.cliffs-direction-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.cliffs-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(255, 122, 0, 0.08);
+  color: var(--cliffs-black) !important;
+  border: 1px solid rgba(255, 122, 0, 0.14);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+html.dark .cliffs-tag {
+  color: #fff4ea !important;
+}
+
+.cliffs-floating-call {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2147483657;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #111111, #2a1d14);
+  border: 1px solid rgba(255, 122, 0, 0.22);
+  box-shadow: var(--cliffs-shadow-strong);
+  color: #fff4ea !important;
+}
+
+.cliffs-floating-call strong {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.cliffs-floating-call span {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cliffs-mini-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--cliffs-orange);
+  box-shadow: 0 0 0 6px rgba(255, 122, 0, 0.12);
+}
+
+body.cliffs-branding table,
+body.cliffs-branding th,
+body.cliffs-branding td {
+  border-color: rgba(255, 122, 0, 0.14) !important;
+}
+
+body.cliffs-branding .modal header {
+  background: linear-gradient(135deg, #111111 0%, #2b1d13 38%, var(--cliffs-orange) 100%) !important;
+}
+
+@media (max-width: 860px) {
+  .cliffs-summary-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cliffs-contact-shell {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .cliffs-contact-strip {
+    padding: 0 10px;
+  }
+
+  .cliffs-contact-shell {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .cliffs-summary-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .cliffs-floating-call {
+    right: 10px;
+    bottom: 10px;
+    padding: 12px 14px;
+  }
+
+  .cliffs-brand-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+}

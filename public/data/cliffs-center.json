@@ -1,0 +1,323 @@
+{
+  "center": {
+    "name": "Cliffs HALLAYM platformasi",
+    "brandName": "Cliffs HALLAYM",
+    "phone": "+998 97 679 10 99",
+    "address": "Qarshi shahri, QarDU eski darvozasi yonida",
+    "landmark": "Mo'ljal: eski darvoza hududi, aniq lokatsiya va qabul vaqti telefon orqali yuboriladi",
+    "mapQuery": "Qarshi shahri QarDU eski darvozasi yonida Cliffs HALLAYM o'quv markazi",
+    "workHours": [
+      "Dushanba - Shanba: 08:30 - 20:00",
+      "Yakshanba: maslahat va qabul kuni"
+    ],
+    "heroTitle": "Qarshida farzandlar va yoshlar uchun tartibli, kuchli va zamonaviy o'qish muhiti.",
+    "headline": "Farzandlar, abituriyentlar va yangi kasb o'rganayotgan yoshlar uchun natijaga yo'naltirilgan o'quv markaz.",
+    "summary": "Cliffs HALLAYM markazida o'qish jarayoni faqat dars bilan cheklanmaydi. Guruh tanlash, jadvalga moslashtirish, mentor kuzatuvi, topshiriq, test va aloqa tizimi bir-biriga bog'langan holda ishlaydi.",
+    "extended": "Har bir yo'nalishda o'quvchi darajasiga qarab joylashtiriladi, darslar kichik bloklarga bo'linadi va qaysi mavzularni kuchaytirish kerakligi muntazam ko'rib boriladi. Ota-ona yoki o'quvchi uchun markazdagi jarayon tushunarli, sodda va tartibli ko'rinishda olib boriladi.",
+    "stats": [
+      { "value": "14+", "label": "asosiy yo'nalish" },
+      { "value": "6", "label": "o'qish formati" },
+      { "value": "08:30-20:00", "label": "kundalik ish vaqti" },
+      { "value": "1", "label": "yagona markaz tizimi" }
+    ]
+  },
+  "heroBullets": [
+    "Offline, online, hybrid, intensiv, individual va weekend guruhlar",
+    "Boshlang'ichdan kuchaytirilgan tayyorlovgacha bo'lgan oqimlar",
+    "Mentor kuzatuvi, topshiriq va test nazorati muntazam olib boriladi",
+    "Telefon orqali qabul, yo'naltirish va guruh tanlash tez amalga oshiriladi",
+    "Til, IT, robototexnika va foundation yo'nalishlari bitta markazda",
+    "Maktab, universitet va ish jadvaliga mos guruhlar mavjud"
+  ],
+  "features": [
+    {
+      "tag": "Qabul",
+      "title": "Darajaga qarab to'g'ri yo'naltirish",
+      "text": "Yangi kelgan o'quvchi bilan suhbat qilinadi, hozirgi darajasi va maqsadi aniqlanadi, so'ng unga mos guruh tavsiya etiladi.",
+      "note": "Boshlanishdayoq tartib paydo bo'ladi."
+    },
+    {
+      "tag": "Nazorat",
+      "title": "Dars jarayoni e'tibordan chetda qolmaydi",
+      "text": "Uy vazifasi, kichik testlar va mentor izohlari orqali o'quvchining qaysi mavzuda kuchli yoki qaysi joyda qo'llab-quvvatlash kerakligi ko'rinadi.",
+      "note": "Natija tasodifga tashlab qo'yilmaydi."
+    },
+    {
+      "tag": "Muhit",
+      "title": "Faol qatnashishga undaydigan darslar",
+      "text": "Faqat tinglab o'tirish emas, yozish, gapirish, bajarish va qayta ko'rsatish tamoyili markazdagi ko'p darslarda qo'llaniladi.",
+      "note": "O'quvchi darsga qo'shilib ketadi."
+    },
+    {
+      "tag": "Jadval",
+      "title": "Har xil kun tartibiga mos guruhlar",
+      "text": "Ertalabgi, kunduzgi, kechki va weekend guruhlar sabab maktab, universitet yoki ish bilan birga o'qish qulay bo'ladi.",
+      "note": "Vaqt tanlash ancha osonlashadi."
+    },
+    {
+      "tag": "Aloqa",
+      "title": "Telefon orqali tezkor ma'lumot",
+      "text": "Qabul, dars vaqti, manzil yoki guruh bo'yicha savollar uchun telefon orqali yo'naltirish va kelishuv tez amalga oshiriladi.",
+      "note": "Kelishdan oldin hammasini bilib olish mumkin."
+    },
+    {
+      "tag": "Natija",
+      "title": "Keyingi bosqich aniq ko'rsatiladi",
+      "text": "Modul yoki mavzu yakunida qaysi mavzular mustahkamlanganini, nimalarni takrorlash kerakligini va keyingi oqimga o'tish imkonini mentorlar aytib boradi.",
+      "note": "O'qish izchil davom etadi."
+    }
+  ],
+  "journey": [
+    {
+      "title": "1. Qabul va suhbat",
+      "text": "O'quvchi yoki ota-ona bilan qisqa suhbat o'tkaziladi, qaysi maqsad uchun kelgani aniqlab olinadi."
+    },
+    {
+      "title": "2. Daraja va guruh tanlash",
+      "text": "Boshlang'ich, davom ettiruvchi yoki intensiv guruh belgilanadi, jadvalga mos vaqt tanlanadi."
+    },
+    {
+      "title": "3. Dars va amaliyot",
+      "text": "Har bir dars mavzu, misol, mustaqil bajarish va savol-javob bilan o'tadi. Kerakli yo'nalishlarda speaking yoki laboratoriya usuli qo'shiladi."
+    },
+    {
+      "title": "4. Vazifa va nazorat",
+      "text": "Uy vazifasi, kichik test yoki amaliy topshiriq orqali mavzu qanday o'zlashtirilayotgani muntazam ko'rib boriladi."
+    },
+    {
+      "title": "5. Natija va keyingi bosqich",
+      "text": "O'quvchi kuchli tomonlari, ustida ishlash kerak bo'lgan joylari va keyingi modul bo'yicha tavsiya oladi."
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Web development mentori",
+      "role": "Frontend va sayt tuzish yo'nalishi",
+      "experience": "Portfolio va amaliy loyiha asosida dars olib boradi",
+      "focus": "HTML, CSS, JavaScript, React va tayyor loyiha yig'ishga urg'u beradi.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "Backend mentori",
+      "role": "Node.js va server tomoni",
+      "experience": "API, ma'lumotlar bazasi va real loyiha misollari bilan ishlaydi",
+      "focus": "Node.js, Express, MongoDB va deploy jarayonini sodda va tushunarli yo'l bilan olib boradi.",
+      "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "IELTS va English mentori",
+      "role": "General English, speaking, IELTS",
+      "experience": "Speaking va writing bo'yicha muntazam izoh beradi",
+      "focus": "Grammar, speaking club, mock exam va individual feedback bilan natijaga ishlaydi.",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "Robototexnika laboratoriya mentori",
+      "role": "Arduino va konstruktor darslari",
+      "experience": "Qo'l bilan yig'ish va sinab ko'rishga tayangan mashg'ulotlar",
+      "focus": "Sensor, motor, smart loyiha va jamoaviy ishlashni bosqichma-bosqich o'rgatadi.",
+      "image": "https://images.unsplash.com/photo-1581091215367-59ab6dcef10c?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "Matematika foundation mentori",
+      "role": "Abituriyent va mantiqiy fikrlash",
+      "experience": "Nazariya va masala yechishni birga olib boradi",
+      "focus": "Tushuntirish, ko'p ishlatiladigan usullar va individual kamchiliklarni yopishga e'tibor beradi.",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "name": "Dizayn va kontent mentori",
+      "role": "Grafik dizayn va SMM yo'nalishi",
+      "experience": "Figma, vizual material va kontent rejasi bilan ishlaydi",
+      "focus": "Banner, post, maket va reklama materiallarini real topshiriqlar orqali tayyorlatadi.",
+      "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Qabul va maslahat zonasi",
+      "text": "Yangi kelganlar uchun suhbat, yo'naltirish va guruh tanlash shu yerda boshlanadi.",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "title": "Amaliy dars muhiti",
+      "text": "Tushuntirishdan keyin o'quvchining o'zi bajarib ko'rishi markaz darslarida muhim o'rin tutadi.",
+      "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "title": "Robototexnika va texnik mashg'ulotlar",
+      "text": "Bolalar va o'smirlar uchun qo'l bilan yig'ish, sinash va ko'rsatish usuli qo'llaniladi.",
+      "image": "https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "title": "Speaking va intensiv guruhlar",
+      "text": "Til darslarida gapirish, eshitish va tez-tez nazoratga alohida e'tibor beriladi.",
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "title": "Mentor bilan yaqin ishlash",
+      "text": "Savol-javob, tekshirish va izoh berish jarayoni o'quvchiga yaqin formatda olib boriladi.",
+      "image": "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "title": "Jamoaviy loyiha va mashg'ulotlar",
+      "text": "Ba'zi yo'nalishlarda kichik loyiha, juftlikda ishlash va guruh mashqlari bilan dars mustahkamlanadi.",
+      "image": "https://images.unsplash.com/photo-1522202222206-b750f9157f63?auto=format&fit=crop&w=1400&q=80"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Ota-ona fikri",
+      "text": "Farzandim qaysi mavzuda ortda qolayotganini yashirib o'tirishmadi, aniq aytishdi va qanday yopish kerakligini ham ko'rsatishdi."
+    },
+    {
+      "author": "Abituriyent fikri",
+      "text": "Darslar quruq gap bo'lmaydi, har hafta natija so'raladi. Shu jihati menga tartib berdi."
+    },
+    {
+      "author": "Kasb o'rganuvchi talaba",
+      "text": "Web yo'nalishida amaliy topshiriq ko'p bo'lgani uchun men faqat eshitib emas, bajarib o'rgandim."
+    },
+    {
+      "author": "English guruhidagi o'quvchi",
+      "text": "Speaking va mock darslar menga foyda berdi. Xatolarimni alohida yozib berishgani yaxshi bo'ldi."
+    },
+    {
+      "author": "Robototexnika to'garagi ota-onasi",
+      "text": "Bolam darsdan keyin uyga kelib nima yig'ganini va qanday ishlatganini ko'rsatib beradi. Qiziqishi ancha oshdi."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kimlar uchun mos?",
+      "a": "Boshlang'ich darajadagi o'quvchilar, abituriyentlar, talaba-yoshlar va yangi kasb o'rganmoqchi bo'lganlar uchun mos guruhlar mavjud."
+    },
+    {
+      "q": "Darslar qanday formatda bo'ladi?",
+      "a": "Offline, online, hybrid, intensiv, individual va weekend formatlar mavjud. Vaqt bo'yicha mos guruh tanlanadi."
+    },
+    {
+      "q": "Qabulga oldindan yozilish kerakmi?",
+      "a": "Ha, telefon orqali bog'lanib kelish vaqti hamda mos yo'nalishni aniqlab olish tavsiya etiladi."
+    },
+    {
+      "q": "Nazorat qanday olib boriladi?",
+      "a": "Kichik testlar, uy vazifasi, amaliy topshiriq va mentor izohlari orqali o'zlashtirish doimiy kuzatiladi."
+    },
+    {
+      "q": "Ota-onaga ma'lumot beriladimi?",
+      "a": "Kerak bo'lganda o'quvchi qatnashuvi, natijasi va tavsiyalar bo'yicha ota-ona bilan aloqaga chiqiladi."
+    }
+  ],
+  "catalog": {
+    "studyTypes": ["Offline", "Online", "Hybrid", "Intensiv", "Individual", "Weekend"],
+    "groups": {
+      "Offline": ["Morning 08:30", "Day 10:30", "Afternoon 14:00", "Evening 18:30"],
+      "Online": ["Online Live 09:00", "Online Live 15:00", "Online Evening 20:00"],
+      "Hybrid": ["Hybrid Flex A", "Hybrid Flex B"],
+      "Intensiv": ["Intensiv 5 kun", "Intensiv 8 hafta"],
+      "Individual": ["Personal Mentor"],
+      "Weekend": ["Saturday Group", "Sunday Group"]
+    },
+    "directions": [
+      {
+        "name": "Dasturlash Foundation",
+        "description": "Kompyuter bilan ishlashga endi kirayotganlar uchun sodda va tushunarli start yo'nalishi.",
+        "audience": "7-sinfdan boshlab va yangi boshlovchilar",
+        "duration": "2-4 oy",
+        "programs": ["Scratch", "Python Start", "Kompyuter savodxonligi", "Algoritm asoslari"]
+      },
+      {
+        "name": "Frontend va Web Development",
+        "description": "Sayt tuzish, interfeys o'ylash va portfolio yig'ishga qaratilgan amaliy yo'nalish.",
+        "audience": "O'smirlar va yoshlar",
+        "duration": "4-8 oy",
+        "programs": ["HTML va CSS", "JavaScript", "React", "Portfolio va freelancing"]
+      },
+      {
+        "name": "Backend va Node.js",
+        "description": "Server tomoni, API va ma'lumotlar bazasi bilan ishlashni o'rgatadigan oqim.",
+        "audience": "Chuqurroq texnik yo'nalishga o'tmoqchi bo'lganlar",
+        "duration": "4-8 oy",
+        "programs": ["Node.js", "Express", "MongoDB", "API va deploy"]
+      },
+      {
+        "name": "Python va Sun'iy Intellekt",
+        "description": "Python asoslari, ma'lumot bilan ishlash va zamonaviy texnologiyalar yo'nalishi.",
+        "audience": "Talaba-yoshlar va texnik yo'nalishga qiziqqanlar",
+        "duration": "3-6 oy",
+        "programs": ["Python Pro", "Data Science", "Machine Learning", "AI Tools"]
+      },
+      {
+        "name": "Robototexnika va Arduino",
+        "description": "Nazariya bilan cheklanmaydigan, qo'l bilan yig'ib ko'riladigan darslar.",
+        "audience": "Maktab o'quvchilari va texnik to'garak qiziquvchilari",
+        "duration": "3-6 oy",
+        "programs": ["Arduino", "Sensor va avtomatika", "LEGO Robotics", "Smart project"]
+      },
+      {
+        "name": "Grafik Dizayn",
+        "description": "Vizual fikrlash, banner, post va interfeys chizishga yo'naltirilgan yo'nalish.",
+        "audience": "Ijodiy yo'nalishni yoqtiradiganlar",
+        "duration": "2-5 oy",
+        "programs": ["Photoshop", "Illustrator", "Figma", "Motion basics"]
+      },
+      {
+        "name": "SMM va Kontent Marketing",
+        "description": "Sahifa yuritish, reklama va kontentni tizimli qilishni o'rgatadigan amaliy yo'nalish.",
+        "audience": "Biznes boshlayotganlar va marketingga qiziqqanlar",
+        "duration": "2-4 oy",
+        "programs": ["SMM Strategiya", "Target", "Kontent Plan", "Shaxsiy brend"]
+      },
+      {
+        "name": "Ingliz tili",
+        "description": "Boshlang'ichdan speaking clubgacha bo'lgan muntazam til yo'nalishi.",
+        "audience": "Maktab o'quvchilari, talabalar va kattalar",
+        "duration": "Doimiy oqim",
+        "programs": ["General English", "Speaking Club", "Grammar Pro", "Kids English"]
+      },
+      {
+        "name": "IELTS va CEFR",
+        "description": "Natijaga yo'naltirilgan intensiv tayyorlov, mock imtihon va yozma nazorat bilan olib boriladi.",
+        "audience": "Sertifikat maqsadi bor o'quvchilar",
+        "duration": "2-6 oy",
+        "programs": ["IELTS Foundation", "IELTS Intensive", "CEFR B1-B2", "Mock exam"]
+      },
+      {
+        "name": "Rus tili",
+        "description": "Grammatika, o'qish va kundalik muloqot uchun bosqichli kurslar.",
+        "audience": "Boshlovchi va davom ettiruvchilar",
+        "duration": "2-5 oy",
+        "programs": ["Beginner", "Grammar", "Speaking", "Academic Russian"]
+      },
+      {
+        "name": "Arab tili",
+        "description": "Alifbo, o'qish va bosqichli tushunishga qaratilgan yo'nalish.",
+        "audience": "Noldan boshlayotganlar",
+        "duration": "3-6 oy",
+        "programs": ["Alifbo", "Nahv", "Muloqot", "Matn bilan ishlash"]
+      },
+      {
+        "name": "Matematika va Mantiq",
+        "description": "Abituriyent va kuchli tayyorlov uchun nazariya ham, masala ham birga ishlanadi.",
+        "audience": "Maktab o'quvchilari va abituriyentlar",
+        "duration": "Doimiy oqim",
+        "programs": ["Abituriyent matematika", "Olimpiada", "Mental math", "Mantiqiy fikrlash"]
+      },
+      {
+        "name": "Fizika va Kimyo",
+        "description": "Masala yechish, tushuntirish va laboratoriya ruhidagi darslar bilan olib boriladi.",
+        "audience": "Abituriyent va maktab o'quvchilari",
+        "duration": "Doimiy oqim",
+        "programs": ["Abituriyent fizika", "Kimyo foundation", "Laboratoriya mashg'ulotlari", "Masala yechish"]
+      },
+      {
+        "name": "Kids Coding va IT Junior",
+        "description": "Bolalarga mos, qiziqarli va bosim bermaydigan formatda texnologiya bilan tanishtiradi.",
+        "audience": "Kichik yoshdagi o'quvchilar",
+        "duration": "2-4 oy",
+        "programs": ["Scratch Kids", "Robotics Kids", "Digital Literacy", "Creative Tech"]
+      }
+    ]
+  }
+}

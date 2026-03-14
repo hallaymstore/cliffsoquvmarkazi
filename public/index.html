@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cliffs HALLAYM | Zamonaviy o'quv markaz</title>
+  <meta name="description" content="Cliffs HALLAYM o'quv markazi: manzil, qabul, kurslar, mentorlar, dars jarayoni va aloqa ma'lumotlari jamlangan orange-black landing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/cliffs-branding.css" />
+  <link rel="stylesheet" href="/cliffs-landing.css" />
+  <script src="/cliffs-branding.js" defer></script>
+  <script src="/cliffs-landing.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="#top" aria-label="Cliffs HALLAYM">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="36" height="36" fill="none">
+            <path d="M21 69.5C14.7 63.2 11 54.5 11 44.9C11 26.6 25.9 12 44.1 12C56.3 12 67.2 18.5 73 28.1" stroke="#090909" stroke-width="10" stroke-linecap="round"/>
+            <path d="M72 72C65.8 77.2 57.8 80.3 49 80.3" stroke="#090909" stroke-width="10" stroke-linecap="round"/>
+            <path d="M38 24C50 24 59.7 33.7 59.7 45.7" stroke="#ff7a00" stroke-width="10" stroke-linecap="round"/>
+            <path d="M38 24V78" stroke="#ff7a00" stroke-width="10" stroke-linecap="round"/>
+            <path d="M38 49H61" stroke="#ff7a00" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <small>Orange Black Edition</small>
+          <strong>Cliffs HALLAYM</strong>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a class="nav-link" href="#about">Markaz</a>
+        <a class="nav-link" href="#gallery">Muhit</a>
+        <a class="nav-link" href="#directions">Yo'nalishlar</a>
+        <a class="nav-link" href="#teachers">Mentorlar</a>
+        <a class="nav-link" href="#contact">Aloqa</a>
+        <button class="theme-btn" id="themeToggle" type="button">Tungi ko'rinish</button>
+        <a class="cta-btn" href="/register.html">Ariza qoldirish</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-main">
+          <div class="hero-badge">Qarshi shahridagi o'quv markaz</div>
+          <h1 class="hero-title" id="heroTitle">Qarshida farzandlar va yoshlar uchun tartibli, kuchli va zamonaviy o'qish muhiti.</h1>
+          <p class="hero-text" id="heroText">Cliffs HALLAYM markazi darsni faqat o'tish bilan cheklanmaydi: qabul, guruh tanlash, mentor kuzatuvi, muntazam nazorat va ota-ona bilan aloqa bir tizimda olib boriladi.</p>
+          <div class="hero-actions">
+            <a class="cta-btn" href="/register.html">Ro'yxatdan o'tish</a>
+            <a class="ghost-btn" id="heroPhone" href="tel:+998976791099">+998 97 679 10 99</a>
+            <a class="ghost-btn" href="/courses.html">Kurslarni ko'rish</a>
+          </div>
+          <div class="bullet-grid" id="heroBullets"></div>
+          <div class="stats-row" id="statsRow"></div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="mosaic" id="heroMosaic"></div>
+          <div class="contact-ribbon">
+            <div class="ribbon-box">
+              <small>Telefon</small>
+              <strong id="topPhone">+998 97 679 10 99</strong>
+              <span>Qabul, yo'naltirish va guruh tanlash bo'yicha tezkor aloqa.</span>
+            </div>
+            <div class="ribbon-box">
+              <small>Manzil</small>
+              <strong id="topAddress">Qarshi shahri</strong>
+              <span id="topLandmark">Mo'ljal: markaziy hudud</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Markaz haqida</div>
+          <h2>O'qitish, nazorat va natija bir-biridan ajralmagan tizim.</h2>
+        </div>
+        <p>Yangi o'quvchi kirib kelgan paytdan boshlab suhbat, daraja aniqlash, guruhga joylash va muntazam nazoratgacha bo'lgan jarayonlar tartib bilan olib boriladi.</p>
+      </div>
+      <div class="story-grid">
+        <article class="story-card">
+          <h3>Markazning yondashuvi</h3>
+          <p id="centerSummary"></p>
+          <p>Har bir yo'nalishda o'quvchi uchun mos daraja tanlanadi, guruhlar vaqtga qarab shakllantiriladi va natija bosqichma-bosqich kuzatib boriladi.</p>
+        </article>
+        <div class="schedule-stack" id="workFormats"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Nega Cliffs HALLAYM</div>
+          <h2>Oilalar va o'quvchilar ko'proq nimani qadrlaydi.</h2>
+        </div>
+        <p>Kichik guruh, qulay vaqt tanlovi, tushunarli izoh, amaliy mashg'ulot va aloqa tezligi markazning kundalik ish uslubida muhim o'rin tutadi.</p>
+      </div>
+      <div class="feature-grid" id="featureGrid"></div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Muhit va atmosfera</div>
+          <h2>Dars qanday o'tishini tasavvur qilish oson bo'lsin.</h2>
+        </div>
+        <p>Qabul hududi, speaking jarayonlari, laboratoriya uslubidagi mashg'ulotlar va amaliy dars atmosferasi shu bo'limda ko'rsatiladi.</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-main" id="galleryMain"></article>
+        <div class="gallery-side" id="gallerySide"></div>
+      </div>
+    </section>
+
+    <section class="section" id="directions">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Yo'nalishlar</div>
+          <h2>Har xil yosh va maqsad uchun tayyor kurs yo'nalishlari.</h2>
+        </div>
+        <p>Dasturlash, robototexnika, tillar, matematika, dizayn va marketing yo'nalishlari bir markaz ichida turli formatlarda ochiladi.</p>
+      </div>
+      <div class="program-grid" id="programGrid"></div>
+    </section>
+
+    <section class="section" id="teachers">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Mentorlar</div>
+          <h2>Yo'nalishga qarab ishlaydigan mentorlar jamoasi.</h2>
+        </div>
+        <p>Har bir mentor o'z yo'nalishi bo'yicha qanday usulda ishlashi, darsda nimaga urg'u berishi va qaysi o'quvchilar bilan ishlashi shu yerda ko'rsatiladi.</p>
+      </div>
+      <div class="mentor-grid" id="mentorGrid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Jarayon</div>
+          <h2>Qabuldan natijagacha bo'lgan yo'l aniq ko'rinadi.</h2>
+        </div>
+        <p>Ota-ona yoki o'quvchi markazga murojaat qilgandan keyin qanday bosqichlar ketma-ket bo'lishi oldindan ravshan ko'rsatiladi.</p>
+      </div>
+      <div class="process-grid" id="processGrid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Fikrlar</div>
+          <h2>Markazga keladiganlar ko'proq nimani qadrlaydi.</h2>
+        </div>
+        <p>Tushunarli dars, muntazam nazorat va qabul bo'yicha tezkor aloqa markaz haqida ko'p tilga olinadigan jihatlardan biridir.</p>
+      </div>
+      <div class="review-grid" id="reviewGrid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Ko'p so'raladigan savollar</div>
+          <h2>Yangi keluvchilar uchun tezkor javoblar.</h2>
+        </div>
+        <p>Kimlar uchun mosligi, dars formatlari, guruh tanlash va nazorat tizimi bo'yicha eng muhim savollar shu yerda jamlandi.</p>
+      </div>
+      <div class="faq-grid" id="faqGrid"></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head">
+        <div>
+          <div class="hero-badge">Aloqa va manzil</div>
+          <h2>Kelishdan oldin hammasi aniq bo'lsin.</h2>
+        </div>
+        <p>Telefon, manzil, mo'ljal, ish vaqti va qabul bo'yicha kerakli ma'lumotlar bir joyga yig'ilgan.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="map-card">
+          <iframe id="mapFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Cliffs HALLAYM manzili"></iframe>
+        </div>
+        <div class="contact-panel">
+          <h3>Cliffs HALLAYM bilan bog'laning</h3>
+          <p>Markaz bo'yicha savollar, guruh tanlash, dars vaqti yoki qabul haqida ma'lumot kerak bo'lsa shu blokdagi aloqa yo'llari orqali tezda bog'lanish mumkin.</p>
+          <div class="contact-list">
+            <div><small>Telefon</small><strong id="contactPhone">+998 97 679 10 99</strong></div>
+            <div><small>Manzil</small><strong id="contactAddress">Qarshi shahri</strong></div>
+            <div><small>Mo'ljal</small><strong id="contactLandmark">Markaziy hudud</strong></div>
+            <div><small>Ish vaqti</small><strong id="contactHours">Dushanba - Shanba</strong></div>
+          </div>
+          <div class="hero-actions">
+            <a class="cta-btn" id="contactCall" href="tel:+998976791099">Qo'ng'iroq qilish</a>
+            <a class="ghost-btn" href="/register.html">Ariza qoldirish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <strong>Cliffs HALLAYM</strong> · Qarshi shahri · Aloqa: <a href="tel:+998976791099">+998 97 679 10 99</a>
+  </footer>
+</body>
+</html>
